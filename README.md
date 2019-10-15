@@ -13,7 +13,7 @@
  *
  * Copyright 2019 ForgeRock AS.
 -->
-# Certificate Auth Node
+# Certificate Auth Nodes
 
 The Certificate authentication node lets administrators integrate X.509 digital certificates into an AM authentication
 trees.
@@ -28,10 +28,16 @@ look up public keys of AM clients, these nodes can also look up public keys in a
 
 ## Usage
 
+###Installation
 To deploy these nodes, download the jar from the releases tab on github 
 [here](https://github.com/FrankGasparovic/Certificate-Auth-Tree-Node/releases/latest). Next, copy the jar into the 
 ../web-container/webapps/openam/WEB-INF/lib directory where AM is deployed. Restart the web container to pick up the 
 new node. The node will then appear in the authentication trees components palette.
+
+###Node Description
+#####Certificate Collector Node  - This node is used to collect an X509 Certificate from a user who is authenticating to AM.
+#####Certificate Validation Node - This node is used to validate the collected certificate.
+#####Certificate User Extractor - This node is used to extract a value from the certificate, and return it to AM to lookup the user.
 
 ### Certificate Collector Node Configuration
 * **Certificate Collection Method** - This field defines how the certificate should be client certificate should be
@@ -113,9 +119,9 @@ Profile</code> attribute.
  
  #### Authenticate an end user with a certificate
  
- To use the Certificate Nodes to Authenticate an end user. Falls back to Username/Password Authentication if a
+ To use the Certificate Nodes to Authenticate an end user. Falls back to Username/Password authentication if a
   failure occurs.
  
- ![SAML_TREE](./images/certificate_flow.png)
+ ![Certificate_Flow](./images/certificate_flow.png)
  
 
