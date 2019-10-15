@@ -17,8 +17,6 @@
 
 package org.forgerock.openam.auth.nodes;
 
-import static com.fasterxml.jackson.annotation.JsonAutoDetect.*;
-
 import org.apache.commons.lang.StringUtils;
 import org.forgerock.json.JsonValue;
 import org.forgerock.openam.annotations.sm.Attribute;
@@ -33,7 +31,6 @@ import org.forgerock.util.i18n.PreferredLocales;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.google.common.collect.ImmutableList;
 import com.google.inject.assistedinject.Assisted;
 import com.iplanet.am.util.SystemProperties;
@@ -64,7 +61,6 @@ import javax.inject.Inject;
  */
 @Node.Metadata(outcomeProvider = CertificateValidationNode.CertificateValidationOutcomeProvider.class,
         configClass = CertificateValidationNode.Config.class)
-@JsonAutoDetect(fieldVisibility = Visibility.ANY)
 public class CertificateValidationNode extends AbstractDecisionNode {
     private static final String BUNDLE = "org/forgerock/openam/auth/nodes/CertificateValidationNode";
     private final Logger logger = LoggerFactory.getLogger(CertificateValidationNode.class);

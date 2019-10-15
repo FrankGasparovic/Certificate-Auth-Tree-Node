@@ -11,7 +11,6 @@ import org.forgerock.util.i18n.PreferredLocales;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.google.common.collect.ImmutableList;
 import com.google.inject.assistedinject.Assisted;
 import com.sun.identity.shared.encode.Base64;
@@ -32,7 +31,6 @@ import javax.inject.Inject;
  */
 @Node.Metadata(outcomeProvider = CertificateCollectorNode.CertificateCollectorProvider.class,
         configClass = CertificateCollectorNode.Config.class)
-@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class CertificateCollectorNode implements Node {
 
     private static final String BUNDLE = "org/forgerock/openam/auth/nodes/CertificateCollectorNode";

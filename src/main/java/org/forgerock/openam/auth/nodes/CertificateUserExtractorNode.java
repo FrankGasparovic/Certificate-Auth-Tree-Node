@@ -13,7 +13,6 @@ import org.forgerock.util.i18n.PreferredLocales;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.google.common.collect.ImmutableList;
 import com.google.inject.assistedinject.Assisted;
 import com.iplanet.security.x509.CertUtils;
@@ -42,7 +41,6 @@ import sun.security.x509.X509CertInfo;
  */
 @Node.Metadata(outcomeProvider = CertificateUserExtractorNode.CertificateUserExtractorOutcomeProvider.class,
         configClass = CertificateUserExtractorNode.Config.class)
-@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class CertificateUserExtractorNode extends AbstractDecisionNode {
 
     private static final String BUNDLE = "org/forgerock/openam/auth/nodes/CertificateUserExtractorNode";
