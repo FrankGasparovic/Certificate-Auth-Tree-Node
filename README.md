@@ -28,13 +28,13 @@ look up public keys of AM clients, these nodes can also look up public keys in a
 
 ## Usage
 
-###Installation
+### Installation
 To deploy these nodes, download the jar from the releases tab on github 
 [here](https://github.com/FrankGasparovic/Certificate-Auth-Tree-Node/releases/latest). Next, copy the jar into the 
 ../web-container/webapps/openam/WEB-INF/lib directory where AM is deployed. Restart the web container to pick up the 
 new node. The node will then appear in the authentication trees components palette.
 
-###Node Descriptions
+### Node Descriptions
 
 Certificate Collector Node  - This node is used to collect an X509 Certificate from a user who is authenticating to AM.
 
