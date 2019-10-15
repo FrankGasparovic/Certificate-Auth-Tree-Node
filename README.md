@@ -34,10 +34,13 @@ To deploy these nodes, download the jar from the releases tab on github
 ../web-container/webapps/openam/WEB-INF/lib directory where AM is deployed. Restart the web container to pick up the 
 new node. The node will then appear in the authentication trees components palette.
 
-###Node Description
-#####Certificate Collector Node  - This node is used to collect an X509 Certificate from a user who is authenticating to AM.
-#####Certificate Validation Node - This node is used to validate the collected certificate.
-#####Certificate User Extractor - This node is used to extract a value from the certificate, and return it to AM to lookup the user.
+###Node Descriptions
+
+Certificate Collector Node  - This node is used to collect an X509 Certificate from a user who is authenticating to AM.
+
+Certificate Validation Node - This node is used to validate the collected certificate.
+
+Certificate User Extractor - This node is used to extract a value from the certificate, and return it to AM to lookup the user.
 
 ### Certificate Collector Node Configuration
 * **Certificate Collection Method** - This field defines how the certificate should be client certificate should be
