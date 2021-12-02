@@ -156,7 +156,8 @@ public class CertificateCollectorNode implements Node {
         }
         logger.debug("Validate cert: " + cert);
         if (cert == null || cert.equals("")) {
-            throw new NodeProcessException("Certificate: no cert from HttpServletRequest header");
+            logger.debug("Certificate: no cert from HttpServletRequest header");
+            return null;
         }
 
         byte[] decoded = Base64.decode(cert);

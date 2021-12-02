@@ -13,7 +13,7 @@
  * information: "Portions copyright [year] [name of copyright owner]".
  *
  * Copyright 2017-2018 ForgeRock AS.
- * 
+ *
 -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -24,7 +24,7 @@
     <artifactId>certificate-node</artifactId>
 
     <groupId>org.forgerock.am</groupId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>Template for an Auth Tree Node maven project</name>
     <description>An Authentication Tree Node for ForgeRock's Identity Platform</description>
 
